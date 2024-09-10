@@ -1,12 +1,10 @@
-/** 1. Tag it as client component */
+/** 1. Tag it as a client component */
 "use client";
 import { storyblokInit, apiPlugin } from "@storyblok/react/rsc";
 
 /** 2. Import your components */
-import Page from "./Page";
-import Teaser from "./Teaser";
-import Grid from "./Grid";
-import Feature from "./Feature";
+import Page from "../components/Page";
+import Teaser from "../components/Teaser";
 
 /** 3. Initialize it as usual */
 storyblokInit({
@@ -15,8 +13,6 @@ storyblokInit({
   components: {
     teaser: Teaser,
     page: Page,
-    grid: Grid,
-    feature: Feature,
   },
 });
 
